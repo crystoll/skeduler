@@ -1,0 +1,53 @@
+{
+  "name": "skeduler",
+  "version": "0.1.0",
+  "description": "Schedule AI coding agents to start after a delay or at an exact local time. Supports Kiro, Copilot, Claude, Cursor, Aider, Goose, and Ollama.",
+  "license": "ISC",
+  "author": "Arto Santala",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crystoll/skeduler.git"
+  },
+  "homepage": "https://github.com/crystoll/skeduler",
+  "keywords": [
+    "cli",
+    "scheduler",
+    "ai",
+    "agent",
+    "kiro",
+    "copilot",
+    "claude",
+    "cursor",
+    "aider",
+    "goose",
+    "ollama"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "skeduler": "dist/cli.js"
+  },
+  "main": "dist/cli.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && node scripts/mark-executable.mjs",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "neverthrow": "^8.1.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^4.1.6"
+  }
+}

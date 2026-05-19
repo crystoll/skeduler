@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.log
+*.tsbuildinfo
+PLAN.md
+.aider*
+.env
+*.context
+.kiro/
