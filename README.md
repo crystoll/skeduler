@@ -2,7 +2,7 @@
 
 Schedule AI coding agents to start after a delay or at an exact local time. Close the terminal — the agent fires when the timer expires.
 
-Supports **Kiro CLI** and **GitHub Copilot CLI**. Auto-detects which is installed.
+Supports **Kiro**, **Copilot**, **Claude**, **Cursor**, **Aider**, **Goose**, and **Ollama**. Auto-detects which is installed.
 
 ```bash
 skeduler "2h" "Refactor the auth module"
@@ -17,7 +17,13 @@ skeduler "2h" "Refactor the auth module"
 ## Install
 
 ```bash
-git clone <repo-url> skeduler && cd skeduler
+npm install -g @crystoll/skeduler
+```
+
+Or from source:
+
+```bash
+git clone https://github.com/crystoll/skeduler.git && cd skeduler
 pnpm install
 pnpm run build
 pnpm link --global
@@ -349,4 +355,4 @@ pnpm run dev -- <args>  # run from source via tsx
 
 ## License
 
-ISC
+MIT

@@ -1,6 +1,10 @@
 {
-  "name": "skeduler",
-  "version": "0.1.0",
+  "name": "@crystoll/skeduler",
+  "version": "0.1.1",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "description": "Schedule AI coding agents to start after a delay or at an exact local time. Supports Kiro, Copilot, Claude, Cursor, Aider, Goose, and Ollama.",
   "license": "MIT",
   "author": "Arto Santala",

@@ -41,7 +41,7 @@ function buildProgram(backendArgs: string[]): Command {
   program
     .name("skeduler")
     .description("Schedule AI coding agents after a delay or at a specific time.")
-    .version("0.1.0")
+    .version("0.1.1")
     .showHelpAfterError();
 
   // Default command: schedule
